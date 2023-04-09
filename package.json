@@ -2,7 +2,7 @@
   "name": "veralink-smartshield-sdk",
   "version": "1.0.0",
   "description": "Toolkit for interacting with Veralink API on authentication processes.",
-  "main": "index.js",
+  "main": "lib/",
   "scripts": {
     "test": "npm test:all"
   },
