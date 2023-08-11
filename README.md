@@ -22,7 +22,7 @@ npm install
 pm2 start ecosystem.config.js --env development
 ```
 
-## URL verify process
+## URL verification process
 - Once started in development, this SDK starts a server at **`http://localhost:3001`** and it waits for incoming connections at the **/verify** endpoint that comes from the [Proxy Server](https://github.com/luisrowley/veralink-smartshield).
 
 - For testing locally using the [Proxy Server](https://github.com/luisrowley/veralink-smartshield), the URL would be:
@@ -31,7 +31,7 @@ pm2 start ecosystem.config.js --env development
 - Finally, you would need to compile and run the [Mobile app verifier](https://github.com/luisrowley/veralink-smartshield-app) and scan the QR code you will see on screen.
 
 ## Caveats
-- In order to check the integrity of the incomming connection, the SDK validates an RSA cryptographic signature using a local **public key** derived from the **private key** that sits at the [Proxy Server](https://github.com/luisrowley/veralink-smartshield). The transaction of such public key occurs only at initialization using a previously authorised bearer token.
+- In order to check the integrity of the incoming connection, the SDK validates an RSA cryptographic signature using a local **public key** derived from the **private key** that sits at the [Proxy Server](https://github.com/luisrowley/veralink-smartshield). The transaction of such public key occurs only at initialization using a previously authorised bearer token.
 
 ## SDK Docs
 - TBD
